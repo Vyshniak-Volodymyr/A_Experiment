@@ -1,260 +1,302 @@
-/* Стиль для тіла сторінки */
+/* Загальний стиль для всього сайту */
 body {
-    background: #f6f6fa; /* Світлий фон для всієї сторінки */
-    padding-left: 40px; /* Відступ зліва */
-    padding-top: 40px; /* Відступ зверху */
-    padding-right: 40px; /* Відступ справа */
-    padding-bottom: 40px; /* Відступ знизу */
-    font-family: "Montserrat", sans-serif; /* Встановлення шрифту */
+    background: #f6f6fa;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
 }
 
-/* Встановлення відступів для списків */
+/* Встановлення маргінів для списків */
 ul,
 ol {
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 0; /* Відсутність нижнього відступу */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/* Контейнер для всього контенту */
+/* Основний контейнер */
 .wrapper {
-    background: #ffffff; /* Білий фон */
-    display: flex; /* Використовуємо flexbox для розташування елементів */
-    flex-direction: row-reverse; /* Зміщення sidebar до правої сторони */
-    width: 1200px; /* Фіксована ширина контейнера */
-    margin: 0 auto; /* Центрування контейнера */
+    background: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-/* Стиль для основного контенту */
+/* Основний контент */
 .main-content {
-    padding-left: 88px; /* Відступ зліва */
-    padding-top: 80px; /* Відступ зверху */
-    padding-right: 40px; /* Відступ справа */
-    padding-bottom: 88px; /* Відступ знизу */
-    box-sizing: border-box; /* Включення відступів у ширину елементів */
+    padding-left: 88px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 88px;
+    box-sizing: border-box;
 }
 
-/* Стиль для sidebar */
+/* Sidebar (бокова панель) */
 .sidebar {
-    background: #e0ebfe; /* Світло-блакитний фон */
-    padding-top: 40px; /* Відступ зверху */
-    padding-bottom: 40px; /* Відступ знизу */
-    box-sizing: border-box; /* Включення відступів у ширину */
-    width: 370px; /* Фіксована ширина sidebar */
+    background: #e0ebfe;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    width: 370px;
 }
 
-/* Стиль для вмісту sidebar */
+/* Контент на боковій панелі */
 .sidebar-content {
-    padding-left: 40px; /* Відступ зліва */
-    padding-top: 40px; /* Відступ зверху */
-    padding-right: 40px; /* Відступ справа */
-    box-sizing: border-box; /* Включення відступів у ширину */
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 
-/* Заголовок секції контактів */
+/* Стилі для заголовка контактів */
 .сontacts-title {
-    color: #161d2a; /* Колір тексту */
-    font-family: Montserrat; /* Шрифт */
-    font-size: 22px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: normal; /* Висота рядка */
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 8px; /* Нижній відступ */
+    color: #161d2a;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
-/* Стиль для типу контакту */
+/* Стилі для типу контактів */
 .contacts-type {
-    color: #161d2a; /* Колір тексту */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 24px; /* Висота рядка */
-    margin-right: 8px; /* Відступ справа */
+    color: #161d2a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 8px;
 }
 
-/* Стиль для посилання контакту */
+/* Лінк контактів */
 .contacts-link {
-    color: #2979ff; /* Колір посилання */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 24px; /* Висота рядка */
-    text-decoration-line: underline; /* Підкреслення */
+    color: #2979ff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
 }
 
-/* Стиль для елементів списку контактів */
+/* Контактні елементи */
 .сontacts-item {
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 4px; /* Нижній відступ */
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
-/* Контейнер для контактів */
+/* Контейнер контактів */
 .сontacts-container {
-    margin-bottom: 40px; /* Нижній відступ */
+    margin-bottom: 40px;
 }
 
-/* Контейнер для навичок */
+/* Контейнер для технічних навичок */
 .skills-container {
-    margin-bottom: 40px; /* Нижній відступ */
+    margin-bottom: 40px;
 }
 
-/* Заголовок для навичок */
+/* Заголовок технічних навичок */
 .skills-title {
-    color: #161d2a; /* Колір тексту */
-    font-size: 22px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: normal; /* Висота рядка */
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 8px; /* Нижній відступ */
+    color: #161d2a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
-/* Стиль для списку навичок */
+/* Список навичок */
 .skills-list {
-    padding-left: 16px; /* Відступ зліва */
+    padding-left: 16px;
 }
 
-/* Стиль для елементів списку навичок */
+/* Елементи списку навичок */
 .skills-list-item {
-    color: #161d2a; /* Колір тексту */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 24px; /* Висота рядка */
+    color: #161d2a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 /* Стиль для професії */
 .my-profession {
-    color: #000; /* Колір тексту */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 17px; /* Висота рядка */
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 8px; /* Нижній відступ */
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 /* Стиль для імені */
 .my-name {
-    color: #000; /* Колір тексту */
-    font-size: 45px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 55px; /* Висота рядка */
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 12px; /* Нижній відступ */
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
-/* Стиль для опису */
+/* Опис про себе */
 .my-descr {
-    color: #595959; /* Колір тексту */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 24px; /* Висота рядка */
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-/* Стиль для інформації про користувача */
+/* Контейнер для інформації про себе */
 .my-info {
-    margin-bottom: 40px; /* Нижній відступ */
+    margin-bottom: 40px;
 }
 
-/* Стиль для заголовка проектів */
+/* Заголовок для проектів */
 .my-projects-title {
-    color: #000; /* Колір тексту */
-    font-size: 22px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 27px; /* Висота рядка */
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 8px; /* Нижній відступ */
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
-/* Стиль для елементів списку проектів */
+/* Стиль для елементів проектів */
 .my-projects-item {
-    color: #000; /* Колір тексту */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 24px; /* Висота рядка */
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
-/* Стиль для списку проектів */
+/* Список проектів */
 .my-projects-list {
-    padding-left: 16px; /* Відступ зліва */
+    padding-left: 16px;
 }
 
-/* Стиль для посилань на проекти */
+/* Лінк до проекту */
 .my-projects-item-link {
-    color: #005fff; /* Колір посилання */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 24px; /* Висота рядка */
-    text-decoration-line: underline; /* Підкреслення */
+    color: #005fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
 }
 
-/* Стиль для технологій проектів */
+/* Технічні навички проектів */
 .my-projects-item-tech {
-    color: #595959; /* Колір тексту */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 24px; /* Висота рядка */
+    color: #595959;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-/* Контейнер для проектів */
+/* Контейнер проектів */
 .my-projects-container {
-    margin-bottom: 40px; /* Нижній відступ */
+    margin-bottom: 40px;
 }
 
-/* Стиль для заголовка досвіду роботи */
+/* Заголовок для досвіду роботи */
 .work-experience-title {
-    color: #000; /* Колір тексту */
-    font-size: 22px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 27px; /* Висота рядка */
-    margin-top: 0px; /* Відсутність верхнього відступу */
-    margin-bottom: 8px; /* Нижній відступ */
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
-/* Стиль для компаній в досвіді роботи */
+/* Назва компанії для досвіду роботи */
 .work-experience-company {
-    color: #000; /* Колір тексту */
-    font-size: 16px; /* Розмір шрифту */
-    font-weight: 700; /* Жирний шрифт */
-    line-height: 20px; /* Висота рядка */
-    margin-top: 0; /* Відсутність верхнього відступу */
-    margin-bottom: 12px; /* Нижній відступ */
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
-/* Стиль для назви компанії */
+/* Колір для імені компанії */
 .company-name {
-    color: #6d9bf5; /* Колір тексту */
+    color: #6d9bf5;
 }
 
-/* Стиль для періоду роботи */
+/* Період роботи */
 .work-experience-period {
-    color: #a8a8a8; /* Колір тексту */
-    font-size: 12px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 15px; /* Висота рядка */
-    margin-bottom: 8px; /* Нижній відступ */
+    color: #a8a8a8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 8px;
 }
 
-/* Стиль для роздільника між періодом та країною */
+/* Роздільник для періоду роботи */
 .work-experience-separator {
-    color: #000; /* Колір тексту */
+    color: #000;
 }
 
-/* Стиль для списку обов'язків на роботі */
+/* Список обов'язків на роботі */
 .work-experience-duties-list {
-    padding-left: 16px; /* Відступ зліва */
+    padding-left: 16px;
 }
 
-/* Стиль для елементів списку обов'язків */
+/* Опис обов'язків на роботі */
 .work-experience-duties-item {
-    color: #595959; /* Колір тексту */
-    font-family: Montserrat; /* Шрифт */
-    font-size: 14px; /* Розмір шрифту */
-    font-weight: 400; /* Тонкий шрифт */
-    line-height: 24px; /* Висота рядка */
+    color: #595959;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 /* Контейнер для досвіду роботи */
 .work-experience-container {
-    margin-bottom: 14px; /* Нижній відступ */
+    margin-bottom: 14px;
 }
 
-/* Стиль для секції освіти */
+/* Стиль для освіти */
 .Ed-dobro {
-    margin-top: 40px; /* Верхній відступ */
+    margin-top: 40px;
+}
+
+/* Медіа запити для адаптивного дизайну */
+
+/* Мобільні пристрої (до 767px) */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        flex-direction: column-reverse; /* Переміщуємо sidebar вниз */
+    }
+    .sidebar {
+        width: 100%; /* Ширина sidebar на мобільних пристроях 100% */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .main-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Планшети і малі екрани (768px - 1157px) */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .wrapper {
+        flex-direction: row-reverse; /* Sidebar зліва */
+    }
+    .sidebar {
+        width: 40%; /* Sidebar займає 40% ширини */
+    }
+    .main-content {
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+}
+
+/* ПК версія */
+@media screen and (min-width: 1158px) {
+    .wrapper {
+        flex-direction: row-reverse; /* Sidebar зліва */
+    }
+    .sidebar {
+        width: 370px; /* Sidebar з фіксованою шириною */
+    }
 }
