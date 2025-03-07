@@ -1,302 +1,106 @@
-/* Загальний стиль для всього сайту */
 body {
     background: #f6f6fa;
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
     font-family: "Montserrat", sans-serif;
 }
 
-/* Встановлення маргінів для списків */
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
-/* Основний контейнер */
 .wrapper {
     background: #ffffff;
     display: flex;
-    flex-direction: row-reverse;
-    width: 1200px;
     margin: 0 auto;
+    width: 1200px;
 }
 
-/* Основний контент */
 .main-content {
-    padding-left: 88px;
-    padding-top: 80px;
-    padding-right: 40px;
-    padding-bottom: 88px;
+    padding: 88px 40px 88px 88px;
     box-sizing: border-box;
 }
 
-/* Sidebar (бокова панель) */
 .sidebar {
     background: #e0ebfe;
-    padding-top: 40px;
-    padding-bottom: 40px;
     box-sizing: border-box;
-    width: 370px;
+    width: 370px; /* Фіксована ширина для всіх пристроїв */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Контент на боковій панелі */
+.sidebar img {
+    display: block;
+    width: 100%; /* Фото відповідає ширині бічної секції */
+    height: auto;
+}
+
 .sidebar-content {
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
-    box-sizing: border-box;
+    padding: 40px;
 }
 
-/* Стилі для заголовка контактів */
-.сontacts-title {
+.contacts-title, .skills-title, .my-projects-title, .work-experience-title {
     color: #161d2a;
-    font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
-    line-height: normal;
-    margin-top: 0;
     margin-bottom: 8px;
 }
 
-/* Стилі для типу контактів */
-.contacts-type {
-    color: #161d2a;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-right: 8px;
-}
-
-/* Лінк контактів */
-.contacts-link {
+.contacts-link, .my-projects-item-link {
     color: #2979ff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-decoration-line: underline;
+    text-decoration: underline;
 }
 
-/* Контактні елементи */
-.сontacts-item {
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
-/* Контейнер контактів */
-.сontacts-container {
-    margin-bottom: 40px;
-}
-
-/* Контейнер для технічних навичок */
-.skills-container {
-    margin-bottom: 40px;
-}
-
-/* Заголовок технічних навичок */
-.skills-title {
-    color: #161d2a;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-/* Список навичок */
-.skills-list {
-    padding-left: 16px;
-}
-
-/* Елементи списку навичок */
-.skills-list-item {
-    color: #161d2a;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-/* Стиль для професії */
-.my-profession {
-    color: #000;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-/* Стиль для імені */
 .my-name {
-    color: #000;
     font-size: 45px;
-    font-weight: 700;
-    line-height: 55px;
-    margin-top: 0;
     margin-bottom: 12px;
 }
 
-/* Опис про себе */
-.my-descr {
+.my-descr, .my-projects-item-tech, .work-experience-period, .work-experience-duties-item {
     color: #595959;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
 }
 
-/* Контейнер для інформації про себе */
-.my-info {
-    margin-bottom: 40px;
-}
-
-/* Заголовок для проектів */
-.my-projects-title {
-    color: #000;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-/* Стиль для елементів проектів */
-.my-projects-item {
-    color: #000;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-}
-
-/* Список проектів */
-.my-projects-list {
-    padding-left: 16px;
-}
-
-/* Лінк до проекту */
-.my-projects-item-link {
-    color: #005fff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-decoration-line: underline;
-}
-
-/* Технічні навички проектів */
-.my-projects-item-tech {
-    color: #595959;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-/* Контейнер проектів */
-.my-projects-container {
-    margin-bottom: 40px;
-}
-
-/* Заголовок для досвіду роботи */
-.work-experience-title {
-    color: #000;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 27px;
-    margin-top: 0px;
-    margin-bottom: 8px;
-}
-
-/* Назва компанії для досвіду роботи */
-.work-experience-company {
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-/* Колір для імені компанії */
-.company-name {
-    color: #6d9bf5;
-}
-
-/* Період роботи */
-.work-experience-period {
-    color: #a8a8a8;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    margin-bottom: 8px;
-}
-
-/* Роздільник для періоду роботи */
-.work-experience-separator {
-    color: #000;
-}
-
-/* Список обов'язків на роботі */
-.work-experience-duties-list {
-    padding-left: 16px;
-}
-
-/* Опис обов'язків на роботі */
-.work-experience-duties-item {
-    color: #595959;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-/* Контейнер для досвіду роботи */
 .work-experience-container {
     margin-bottom: 14px;
 }
 
-/* Стиль для освіти */
 .Ed-dobro {
     margin-top: 40px;
 }
 
-/* Медіа запити для адаптивного дизайну */
-
-/* Мобільні пристрої (до 767px) */
+/* Для мобільних пристроїв (до 767px) */
 @media screen and (max-width: 767px) {
     .wrapper {
-        flex-direction: column-reverse; /* Переміщуємо sidebar вниз */
+        flex-direction: column;
     }
+
     .sidebar {
-        width: 100%; /* Ширина sidebar на мобільних пристроях 100% */
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .main-content {
-        padding-left: 20px;
-        padding-right: 20px;
+        order: -1; /* Sidebar зверху */
+        width: 370px; /* Фіксована ширина залишається незмінною */
+        margin: 0 auto; /* Центрування секції */
     }
 }
 
-/* Планшети і малі екрани (768px - 1157px) */
+/* Для планшетів і малих екранів (768px - 1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .wrapper {
-        flex-direction: row-reverse; /* Sidebar зліва */
+        flex-direction: column;
     }
+
     .sidebar {
-        width: 40%; /* Sidebar займає 40% ширини */
-    }
-    .main-content {
-        padding-left: 60px;
-        padding-right: 40px;
+        order: -1; /* Sidebar зверху */
+        width: 370px; /* Фіксована ширина залишається незмінною */
+        margin: 0 auto; /* Центрування секції */
     }
 }
 
-/* ПК версія */
+/* Для ПК (від 1158px) */
 @media screen and (min-width: 1158px) {
     .wrapper {
-        flex-direction: row-reverse; /* Sidebar зліва */
-    }
-    .sidebar {
-        width: 370px; /* Sidebar з фіксованою шириною */
+        flex-direction: row-reverse;
     }
 }
