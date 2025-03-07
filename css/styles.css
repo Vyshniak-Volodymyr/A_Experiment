@@ -1,6 +1,10 @@
+/* Загальні стилі */
 body {
     background: #f6f6fa;
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -18,31 +22,36 @@ ul, ol {
 }
 
 /* Main content */
-
 .main-content {
-    padding: 80px 40px 88px 88px;
+    padding-left: 88px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 88px;
     box-sizing: border-box;
 }
 
 /* Sidebar */
-
 .sidebar {
     background: #e0ebfe;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     box-sizing: border-box;
     width: 370px;
 }
 
 .sidebar-content {
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
     box-sizing: border-box;
 }
 
-/* Contacts styles */
 .сontacts-title {
     color: #161d2a;
+    font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
+    line-height: normal;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -51,12 +60,15 @@ ul, ol {
     color: #161d2a;
     font-size: 14px;
     font-weight: 700;
+    line-height: 24px;
     margin-right: 8px;
 }
 
 .contacts-link {
     color: #2979ff;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
     text-decoration-line: underline;
 }
 
@@ -77,6 +89,7 @@ ul, ol {
     color: #161d2a;
     font-size: 22px;
     font-weight: 700;
+    line-height: normal;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -88,15 +101,16 @@ ul, ol {
 .skills-list-item {
     color: #161d2a;
     font-size: 14px;
+    font-weight: 400;
     line-height: 24px;
 }
 
-/* Main content styles */
-
+/* Main content */
 .my-profession {
     color: #000;
     font-size: 14px;
     font-weight: 700;
+    line-height: 17px;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -105,6 +119,7 @@ ul, ol {
     color: #000;
     font-size: 45px;
     font-weight: 700;
+    line-height: 55px;
     margin-top: 0;
     margin-bottom: 12px;
 }
@@ -112,6 +127,7 @@ ul, ol {
 .my-descr {
     color: #595959;
     font-size: 14px;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -119,12 +135,12 @@ ul, ol {
     margin-bottom: 40px;
 }
 
-/* Projects styles */
-
+/* My projects */
 .my-projects-title {
     color: #000;
     font-size: 22px;
     font-weight: 700;
+    line-height: 27px;
     margin-top: 0;
     margin-bottom: 8px;
 }
@@ -142,20 +158,29 @@ ul, ol {
 
 .my-projects-item-link {
     color: #005fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
     text-decoration-line: underline;
 }
 
 .my-projects-item-tech {
     color: #595959;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-/* Work experience styles */
+.my-projects-container {
+    margin-bottom: 40px;
+}
 
+/* Work experience */
 .work-experience-title {
     color: #000;
     font-size: 22px;
     font-weight: 700;
+    line-height: 27px;
     margin-top: 0px;
     margin-bottom: 8px;
 }
@@ -164,6 +189,7 @@ ul, ol {
     color: #000;
     font-size: 16px;
     font-weight: 700;
+    line-height: 20px;
     margin-top: 0;
     margin-bottom: 12px;
 }
@@ -175,6 +201,9 @@ ul, ol {
 .work-experience-period {
     color: #a8a8a8;
     font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 8px;
 }
 
 .work-experience-separator {
@@ -187,7 +216,10 @@ ul, ol {
 
 .work-experience-duties-item {
     color: #595959;
+    font-family: Montserrat;
     font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
     line-height: 24px;
 }
 
@@ -199,36 +231,61 @@ ul, ol {
     margin-top: 40px;
 }
 
-/* Mobile-first media queries */
+/* Media queries */
 
-/* For mobile devices (up to 767px) */
+/* Для мобільних пристроїв (до 767px) */
 @media screen and (max-width: 767px) {
     .wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column; /* Sidebar зверху */
     }
-    
+
     .sidebar {
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        width: 370px; /* Залишаємо фіксовану ширину бокової панелі */
+        padding: 20px;
+        order: -1; /* Переміщаємо бокову панель вгору */
     }
-    
+
+    .sidebar img {
+        width: 100%; /* Встановлюємо ширину фото на 100% */
+        height: auto;
+    }
+
     .main-content {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
-/* For tablets and small screens (768px - 1157px) */
+/* Для планшетів і малих екранів (768px - 1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+    .wrapper {
+        flex-direction: column; /* Sidebar зверху */
+    }
+
+    .sidebar {
+        width: 370px; /* Залишаємо фіксовану ширину бокової панелі */
+        padding: 20px;
+        order: -1; /* Переміщаємо бокову панель вгору */
+    }
+
+    .main-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Для великих екранів (1158px і більше) */
+@media screen and (min-width: 1158px) {
     .wrapper {
         flex-direction: row-reverse;
     }
 
     .sidebar {
-        width: 50%;
+        width: 370px; /* Фіксована ширина бокової панелі для ПК */
+    }
+
+    .main-content {
+        padding-left: 88px;
+        padding-right: 40px;
     }
 }
-
-/* For desktop (min-width: 1158px) */
-@media screen and (min-width: 1158
