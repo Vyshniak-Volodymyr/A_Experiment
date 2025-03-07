@@ -1,4 +1,4 @@
-/* Загальні стилі */
+/* Global styles for mobile-first design */
 body {
     background: #f6f6fa;
     padding-left: 40px;
@@ -16,17 +16,17 @@ ul, ol {
 .wrapper {
     background: #ffffff;
     display: flex;
-    flex-direction: row-reverse;
-    width: 1200px;
+    flex-direction: column; /* Default column for mobile */
+    width: 100%; /* Ensures mobile-friendly layout */
     margin: 0 auto;
 }
 
 /* Main content */
 .main-content {
-    padding-left: 88px;
+    padding-left: 40px;
     padding-top: 80px;
     padding-right: 40px;
-    padding-bottom: 88px;
+    padding-bottom: 88px;   
     box-sizing: border-box;
 }
 
@@ -36,7 +36,7 @@ ul, ol {
     padding-top: 40px;
     padding-bottom: 40px;
     box-sizing: border-box;
-    width: 370px;
+    width: 100%; /* Full width on mobile */
 }
 
 .sidebar-content {
@@ -46,52 +46,29 @@ ul, ol {
     box-sizing: border-box;
 }
 
-.сontacts-title {
+.сontacts-title, .skills-title {
     color: #161d2a;
     font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
-    line-height: normal;
     margin-top: 0;
     margin-bottom: 8px;
 }
 
-.contacts-type {
-    color: #161d2a;
+.contacts-type, .contacts-link {
     font-size: 14px;
-    font-weight: 700;
     line-height: 24px;
-    margin-right: 8px;
+    color: #161d2a;
 }
 
 .contacts-link {
-    color: #2979ff;
+    text-decoration: underline;
+}
+
+.сontacts-item, .skills-list-item {
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
-    text-decoration-line: underline;
-}
-
-.сontacts-item {
-    margin-top: 0;
-    margin-bottom: 4px;
-}
-
-.сontacts-container {
-    margin-bottom: 40px;
-}
-
-.skills-container {
-    margin-bottom: 40px;
-}
-
-.skills-title {
     color: #161d2a;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 0;
-    margin-bottom: 8px;
 }
 
 .skills-list {
@@ -99,35 +76,31 @@ ul, ol {
 }
 
 .skills-list-item {
-    color: #161d2a;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
+    color: #161d2a;
 }
 
-/* Main content */
-.my-profession {
+/* My Info */
+.my-profession, .my-name {
     color: #000;
-    font-size: 14px;
     font-weight: 700;
-    line-height: 17px;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.my-profession {
+    font-size: 14px;
 }
 
 .my-name {
-    color: #000;
     font-size: 45px;
-    font-weight: 700;
     line-height: 55px;
-    margin-top: 0;
-    margin-bottom: 12px;
 }
 
 .my-descr {
     color: #595959;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
 }
 
@@ -135,21 +108,19 @@ ul, ol {
     margin-bottom: 40px;
 }
 
-/* My projects */
+/* My Projects */
 .my-projects-title {
     color: #000;
     font-size: 22px;
     font-weight: 700;
-    line-height: 27px;
     margin-top: 0;
     margin-bottom: 8px;
 }
 
 .my-projects-item {
-    color: #000;
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
+    color: #000;
 }
 
 .my-projects-list {
@@ -160,7 +131,6 @@ ul, ol {
     color: #005fff;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
     text-decoration-line: underline;
 }
 
@@ -180,8 +150,7 @@ ul, ol {
     color: #000;
     font-size: 22px;
     font-weight: 700;
-    line-height: 27px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 
@@ -189,7 +158,6 @@ ul, ol {
     color: #000;
     font-size: 16px;
     font-weight: 700;
-    line-height: 20px;
     margin-top: 0;
     margin-bottom: 12px;
 }
@@ -201,13 +169,8 @@ ul, ol {
 .work-experience-period {
     color: #a8a8a8;
     font-size: 12px;
-    font-weight: 400;
     line-height: 15px;
     margin-bottom: 8px;
-}
-
-.work-experience-separator {
-    color: #000;
 }
 
 .work-experience-duties-list {
@@ -216,10 +179,7 @@ ul, ol {
 
 .work-experience-duties-item {
     color: #595959;
-    font-family: Montserrat;
     font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
     line-height: 24px;
 }
 
@@ -231,61 +191,84 @@ ul, ol {
     margin-top: 40px;
 }
 
-/* Media queries */
+/* Media Queries */
 
-/* Для мобільних пристроїв (до 767px) */
+/* For mobile screens (up to 767px) */
 @media screen and (max-width: 767px) {
     .wrapper {
-        flex-direction: column; /* Sidebar зверху */
-    }
-
-    .sidebar {
-        width: 370px; /* Залишаємо фіксовану ширину бокової панелі */
-        padding: 20px;
-        order: -1; /* Переміщаємо бокову панель вгору */
-    }
-
-    .sidebar img {
-        width: 100%; /* Встановлюємо ширину фото на 100% */
-        height: auto;
+        flex-direction: column; /* Column layout for mobile */
+        padding: 0 20px;
     }
 
     .main-content {
         padding-left: 20px;
+        padding-top: 40px;
         padding-right: 20px;
-    }
-}
-
-/* Для планшетів і малих екранів (768px - 1157px) */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-    .wrapper {
-        flex-direction: column; /* Sidebar зверху */
     }
 
     .sidebar {
-        width: 370px; /* Залишаємо фіксовану ширину бокової панелі */
-        padding: 20px;
-        order: -1; /* Переміщаємо бокову панель вгору */
+        width: 100%;
+        order: -1; /* Sidebar should be on top */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .my-name {
+        font-size: 30px;
+    }
+
+    .my-profession {
+        font-size: 12px;
+    }
+
+    .my-projects-title,
+    .work-experience-title,
+    .skills-title {
+        font-size: 18px;
+    }
+
+    .contacts-type, .contacts-link {
+        font-size: 12px;
+    }
+}
+
+/* For tablets and small screens (768px - 1157px) */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .wrapper {
+        flex-direction: row-reverse; /* Row layout for tablets */
+    }
+
+    .sidebar {
+        width: 300px;
     }
 
     .main-content {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 50px;
+    }
+
+    .my-name {
+        font-size: 40px;
+    }
+
+    .my-profession {
+        font-size: 14px;
     }
 }
 
-/* Для великих екранів (1158px і більше) */
+/* For larger screens (1158px and above) */
 @media screen and (min-width: 1158px) {
     .wrapper {
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; /* Row layout for PC */
+        width: 1200px;
     }
 
     .sidebar {
-        width: 370px; /* Фіксована ширина бокової панелі для ПК */
+        width: 370px;
     }
 
     .main-content {
         padding-left: 88px;
+        padding-top: 80px;
         padding-right: 40px;
     }
 }
